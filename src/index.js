@@ -1,6 +1,19 @@
 // complete the function
 function prime (num) {
   // code goes here
+  var arg = true;
+  if (num === 1) {
+    arg = false;
+  } else if (num > 1) {
+      for (let i = 2 ; i < num; i++) {
+        if (num % i === 0) {
+            arg = false;
+            break;
+        }
+      }
+  } else {
+    arg = false;
+  }
 }
 
 function solution (arg) {
